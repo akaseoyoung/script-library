@@ -1,5 +1,5 @@
 function calculateActivityBycolor() {
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('yoursheetname');
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet(); // Get current sheet
   const startRow = 8;
   const endRow = 103;
   const numRows = endRow - startRow + 1;
